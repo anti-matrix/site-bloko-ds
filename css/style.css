@@ -1,3 +1,8 @@
+@font-face {
+    font-family: NeuerDMedium;
+    src: url(neuesingular-d-medium.otf);
+}
 body {
+    font-family: NeuerDMedium;
     background-color: #FFF;
 }
