@@ -1,8 +1,4 @@
-@font-face {
-    font-family: NeuerDLight;
-    src: url(neuesingular-d-light.otf);
-}
 body {
-    font-family: NeuerDLight;
+    font-family: 'Nunito Regular 400', sans-serif;
     background-color: #FFF;
 }
