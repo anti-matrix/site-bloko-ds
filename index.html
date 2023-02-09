@@ -10,9 +10,6 @@
         <link href="img/bloko-icon.svg" rel="shortcut icon" type="image/x-icon"/><link href="img/apple-icon.png" rel="apple-touch-icon"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
         <style>
             #top-banner {
                 height: 48px;
@@ -58,6 +55,15 @@
             }
             .h1-header {
                 font-family: 'Nunito Bold 700', sans-serif;
+                font-size: 60px;
+                font-weight: 700;  letter-spacing: -0.03em;
+                margin-left: 30px;
+                line-height: 52px;
+                box-sizing: border-box;
+                text-align: left;
+            }
+            .navbar-collapse {
+                flex-grow: 0!important;
             }
         </style>
     </head>
@@ -75,7 +81,10 @@
                     <a class="navbar-brand" href="#">
                         <img src="img/bloko-logo.svg" alt="" height="55">
                     </a>
-                <div class="d-flex justify-content-end" id="navbarSupportedContent">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -102,16 +111,18 @@
                 </div>
             </nav>
         </div>
-        <section id="header">
-            <div class="sec-1">
-                <div class="header-content">
-                <h1 class="h1-header">Beautiful food & takeaway, <span style="color:#35b8be">delivered</span> to your door.</h1>
+            <section id="header">
+                <div class="container-flud sec-1">
+                    <div class="row">
+                        <div class="header-content col-md-6 row d-flex justify-content-center">
+                            <h1 class="h1-header">Beautiful food & takeaway, <span style="color:#35b8be">delivered</span> to your door.</h1>
+                        </div>
+                        <div class="header-image col-md-6 d-flex justify-content-end">
+                            <img src="img/img001.png" sizes="(max-width: 612px) 94vw, (max-width: 991px) 576px, 47vw">
+                        </div>
+                    </div>
                 </div>
-                <div class="header=image d-flex justify-content-end">
-                    <img src="img/img001.png" sizes="(max-width: 612px) 94vw, (max-width: 991px) 576px, 47vw">
-                </div>
-            </div>
-        </section>
+            </section>
         <script type="text/javascript" src="js/index.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
